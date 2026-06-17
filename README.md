@@ -42,6 +42,7 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ```text
 ![Dashboard](screenshots/dashboard.jpg)
+<img src="screenshots/dashboard.jpg" alt="Dashboard" width="100%">
 ```
 
 ### Host Details
