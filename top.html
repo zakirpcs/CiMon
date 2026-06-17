@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Web Interface Monitoring</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="robots" content="noindex, nofollow" />
+	<link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+	<style>
+		@font-face {
+			font-family: 'Geist';
+			src: url('fonts/Geist[wght].woff2') format('woff2');
+			font-weight: 100 900;
+			font-style: normal;
+			font-display: swap;
+		}
+		html, body {
+			height: 60px;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: 'Geist', system-ui, sans-serif;
+		}
+		body {
+			background: linear-gradient(180deg, #141b2d 0%, #0f172a 100%);
+			position: relative;
+		}
+		/* Glowing indigo bottom border */
+		body::after {
+			content: '';
+			position: absolute;
+			bottom: 0; left: 0; right: 0;
+			height: 1px;
+			background: linear-gradient(90deg,
+				transparent 0%,
+				rgba(99,102,241,0.3) 20%,
+				rgba(99,102,241,0.7) 50%,
+				rgba(99,102,241,0.3) 80%,
+				transparent 100%);
+		}
+		/* Brand logo mark */
+		.brand-icon {
+			width: 26px;
+			height: 26px;
+			background: linear-gradient(135deg, #4f46e5, #6366f1);
+			border-radius: 7px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+			box-shadow: 0 2px 8px rgba(99,102,241,0.45);
+		}
+		.brand-icon svg {
+			width: 14px; height: 14px;
+		}
+		.brand-name {
+			font-size: 1.05rem;
+			font-weight: 700;
+			letter-spacing: -0.02em;
+			color: #f1f5f9;
+			white-space: nowrap;
+		}
+		.brand-name span { color: #818cf8; }
+		.brand-divider {
+			width: 1px;
+			height: 20px;
+			background: linear-gradient(to bottom, transparent, #334155, transparent);
+			flex-shrink: 0;
+		}
+		.brand-tag {
+			font-size: 0.6rem;
+			font-weight: 600;
+			letter-spacing: 0.14em;
+			text-transform: uppercase;
+			color: #475569;
+			white-space: nowrap;
+		}
+		/* Nagios Core pill */
+		.nagios-wordmark {
+			display: flex;
+			align-items: center;
+			gap: 7px;
+			text-decoration: none;
+			padding: 5px 12px;
+			border-radius: 8px;
+			border: 1px solid rgba(255,255,255,0.06);
+			background: rgba(255,255,255,0.03);
+			transition: border-color 0.15s ease, background 0.15s ease;
+		}
+		.nagios-wordmark:hover {
+			border-color: rgba(99,102,241,0.35);
+			background: rgba(99,102,241,0.06);
+		}
+		/* Pulsing online indicator */
+		.online-dot {
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #4ade80;
+			flex-shrink: 0;
+			box-shadow: 0 0 0 0 rgba(74,222,128,0.5);
+			animation: pulse-ring 2.4s ease-in-out infinite;
+		}
+		@keyframes pulse-ring {
+			0%   { box-shadow: 0 0 0 0   rgba(74,222,128,0.5); }
+			60%  { box-shadow: 0 0 0 5px rgba(74,222,128,0); }
+			100% { box-shadow: 0 0 0 0   rgba(74,222,128,0); }
+		}
+		.nagios-wordmark-text {
+			font-size: 0.7rem;
+			font-weight: 600;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #64748b;
+			transition: color 0.12s ease;
+		}
+		.nagios-wordmark:hover .nagios-wordmark-text { color: #94a3b8; }
+		/* Process status dots (used by main.php JS) */
+		.dot-enabled     { color: #22c55e; font-size: 0.6rem; }
+		.dot-disabled    { color: #ef4444; font-size: 0.6rem; }
+		.dot-passiveonly { color: #f59e0b; font-size: 0.6rem; }
+	</style>
+</head>
+<body class="d-flex align-items-center justify-content-between px-4">
+
+	<div class="d-flex align-items-center" style="gap:12px;">
+		<a href="/nagios/" class="d-flex align-items-center" style="gap:10px; text-decoration:none;">
+			<div class="brand-icon">
+				<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+					<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+				</svg>
+			</div>
+			<span class="brand-name">Net<span>Monitor</span></span>
+		</a>
+		<div class="brand-divider"></div>
+		<span class="brand-tag">Network Monitoring</span>
+	</div>
+
+	<div class="d-flex align-items-center" style="gap:12px;">
+		<a href="http://www.nagios.org/" target="_blank" class="nagios-wordmark">
+			<div class="online-dot"></div>
+			<span class="nagios-wordmark-text">Nagios Core</span>
+		</a>
+	</div>
+
+</body>
+</html>

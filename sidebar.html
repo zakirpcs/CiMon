@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Web Interface Monitoring</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="robots" content="noindex, nofollow" />
+	<style>
+		@font-face {
+			font-family: 'Geist';
+			src: url('fonts/Geist[wght].woff2') format('woff2');
+			font-weight: 100 900; font-style: normal; font-display: swap;
+		}
+		html, body { height: 26px; overflow: hidden; margin: 0; padding: 0; font-family: 'Geist', system-ui, sans-serif; }
+		body { background: #1e293b; border-top: 1px solid #334155; }
+		#navigation { display: flex; align-items: center; justify-content: flex-end; height: 26px; padding: 0 8px; gap: 6px; }
+		#search_box { display: flex; align-items: center; background: #0f172a; border: 1px solid #334155; border-radius: 5px; height: 20px; overflow: hidden; }
+		#search_box fieldset { border: 0; padding: 0; margin: 0; display: flex; align-items: center; }
+		#search {
+			background: transparent; border: none; color: #cbd5e1;
+			font-family: 'Geist', system-ui, sans-serif; font-size: 0.73rem;
+			height: 20px; width: 160px; padding: 0 8px; outline: none;
+		}
+		#search::placeholder { color: #475569; }
+		#search_submit { width: 24px; height: 20px; cursor: pointer; vertical-align: middle; opacity: 0.5; transition: opacity 0.15s; padding: 0 3px; border-left: 1px solid #334155; }
+		#search_submit:hover { opacity: 1; }
+	</style>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/search.js"></script>
+</head>
+<body>
+	<div id="navigation">
+		<div id="search_box">
+			<form action="/nagios/cgi-bin/status.cgi" method="get" target="main" style="display:flex; align-items:center; margin:0;">
+				<fieldset>
+					<input id="search" name="host" type="text" />
+					<input type="hidden" name="navbarsearch" value="1" />
+					<input src="images/interface/search.gif" alt="OK" title="Search" id="search_submit" type="image" />
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
