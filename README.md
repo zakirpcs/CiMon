@@ -46,12 +46,8 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 ```
 
 ### Host Details
-
-> Add host details screenshot here
-
-```text
 ![Dashboard](screenshots/host-details.jpg)
-```
+
 
 ### Service View
 
