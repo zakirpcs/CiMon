@@ -24,8 +24,8 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ## ✨ Features
 
-| Category | Capabilities |
-|-----------|-------------|
+| Category       | Capabilities |
+|----------------|-------------|
 | 🏠 **Dashboard** | Modern dashboard with global search and quick visibility of all problematic hosts and services |
 | ⚙️ **Host Management** | Compact and organized host details view |
 | 🛡️ **Service Monitoring** | Collapsible service details for improved navigation |
