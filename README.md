@@ -38,7 +38,7 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ### Dashboard
 
-![Dashboard](screenshots/host-details.jpg)
+![Dashboard](screenshots/dashboard.jpg)
 
 ### Host Details
 
