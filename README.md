@@ -38,24 +38,15 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ### Dashboard
 
-> Add dashboard screenshot here
-
-```text
-![Dashboard](screenshots/dashboard.jpg)
-<img src="screenshots/dashboard.jpg" alt="Dashboard" width="100%">
-```
-
-### Host Details
 ![Dashboard](screenshots/host-details.jpg)
 
+### Host Details
+
+![Host Details](screenshots/host-details.jpg)
 
 ### Service View
 
-> Add service view screenshot here
-
-```text
-![Dashboard](screenshots/service-view.png)
-```
+![Service View](screenshots/service-view.jpg)
 
 ### Notifications
 
