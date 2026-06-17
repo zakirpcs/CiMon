@@ -41,7 +41,7 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 > Add dashboard screenshot here
 
 ```text
-screenshots/dashboard.png
+screenshots/dashboard.jpg
 ```
 
 ### Host Details
@@ -49,7 +49,7 @@ screenshots/dashboard.png
 > Add host details screenshot here
 
 ```text
-screenshots/host-details.png
+screenshots/host-details.jpg
 ```
 
 ### Service View
@@ -65,7 +65,7 @@ screenshots/service-view.png
 > Add notification screenshot here
 
 ```text
-screenshots/notifications.png
+screenshots/notifications.jpg
 ```
 
 ---
