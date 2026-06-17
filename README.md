@@ -75,7 +75,7 @@ screenshots/notifications.png
 ### Download CiMon
 
 Download the latest CiMon package and upload it to your Nagios server.
-
+git clone https://github.com/zakirpcs/CiMon.git
 Extract the package and replace the existing Nagios web theme.
 
 ```bash
