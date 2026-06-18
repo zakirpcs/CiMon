@@ -39,13 +39,14 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 ### Dashboard
 
 ![Dashboard](screenshots/cmon-dashboard.png)
-### Host Details
 
-![Host Details](screenshots/host-details.jpg)
+### Host Status
 
-### Service View
+![Host Details](screenshots/host-status.png)
 
-![Service View](screenshots/service-view.jpg)
+### Service Status
+
+![Service View](screenshots/service-status.png)
 
 ### Availability
 
