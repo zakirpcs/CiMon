@@ -1,4 +1,6 @@
 <div align="center">
+  
+<img src="screenshots/CiMon.png" width="72" alt="VaultSphere logo" />
 
 # CiMon
 
