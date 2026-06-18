@@ -88,6 +88,7 @@ systemctl restart nagios httpd
 
 - Nagios Core
 - Apache HTTP Server (httpd)
+- PHP
 - Linux Server (RHEL, AlmaLinux, Rocky Linux, CentOS, Debian, Ubuntu)
 - Modern Web Browser
 
