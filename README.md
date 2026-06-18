@@ -38,8 +38,7 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.jpg)
-
+![Dashboard](screenshots/cmon-dashboard.png)
 ### Host Details
 
 ![Host Details](screenshots/host-details.jpg)
@@ -50,11 +49,7 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ### Notifications
 
-> Add notification screenshot here
-
-```text
-screenshots/notifications.jpg
-```
+![Host Details](screenshots/availability.png)
 
 ---
 
