@@ -47,7 +47,7 @@ Whether you are monitoring a small infrastructure or a large enterprise environm
 
 ![Service View](screenshots/service-view.jpg)
 
-### Notifications
+### Availability
 
 ![Host Details](screenshots/availability.png)
 
