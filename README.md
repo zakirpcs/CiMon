@@ -10,7 +10,6 @@ A modern, lightweight, and responsive user interface for Nagios that improves us
 
 ![GitHub Release](https://img.shields.io/badge/Release-Stable-green)
 ![Nagios](https://img.shields.io/badge/Nagios-Compatible-blue)
-![License](https://img.shields.io/badge/License-Commercial-orange)
 
 </div>
 
